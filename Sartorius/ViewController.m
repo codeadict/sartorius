@@ -17,13 +17,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self initializeUI];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)initializeUI
+{
+    [[_customer layer] setBorderColor:[[UIColor blackColor] CGColor]];
+    [[_customer layer] setBorderWidth:1.3];
+    [[_customer layer] setCornerRadius:15];
 }
 
 @end
